@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+def lifecycle_version = "2.6.0-alpha02"
+
 android {
     namespace 'com.br.shortener_link'
     compileSdk 33
@@ -41,4 +43,20 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //Network
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.okhttp3:okhttp:4.9.3"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
+    implementation 'com.google.code.gson:gson:2.10'
+
+    //Asynchronously call
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+
+    //Dependency Injection
+    implementation "io.insert-koin:koin-android:3.1.5"
+
+    //Viewmodel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle_version}"
 }
