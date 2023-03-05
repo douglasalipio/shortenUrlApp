@@ -6,5 +6,5 @@ data class AliasResponse(
     @SerializedName("alias")
     val alias: String,
     @SerializedName("_links")
-    val link: Links
+    val links: Links
 )

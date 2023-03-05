@@ -18,7 +18,7 @@ class AliasResponseToModelMapperTest {
         val actualAliasModel = expectedAliasResponse.mapToDomain()
         // then
         assertEquals(expectedAliasResponse.alias, actualAliasModel.alias)
-        assertEquals(expectedAliasResponse.link.self, actualAliasModel.link.self)
-        assertEquals(expectedAliasResponse.link.short, actualAliasModel.link.short)
+        assertEquals(expectedAliasResponse.links.self, actualAliasModel.link.self)
+        assertEquals(expectedAliasResponse.links.short, actualAliasModel.link.short)
     }
 }
