@@ -1,6 +1,6 @@
 package com.br.shortener_link.core
 
-import com.br.shortener_link.data.datasource.api.AliasApi
+import com.br.shortener_link.data.shortUrl.datasource.api.ShortApi
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -14,7 +14,7 @@ object NetworkService {
 
     private const val BASE_URL = "https://url-shortener-nu.herokuapp.com"
 
-    fun create(isDebug: Boolean = true): AliasApi {
+    fun create(isDebug: Boolean = true): ShortApi {
         val okHttpClient = makeOkHttpClient(
             makeLoggingInterceptor(isDebug)
         )
@@ -24,13 +24,13 @@ object NetworkService {
         )
     }
 
-    private fun makeServiceApp(okHttpClient: OkHttpClient, gson: Gson): AliasApi {
+    private fun makeServiceApp(okHttpClient: OkHttpClient, gson: Gson): ShortApi {
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
-        return retrofit.create(AliasApi::class.java)
+        return retrofit.create(ShortApi::class.java)
     }
 
     private fun makeOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient {

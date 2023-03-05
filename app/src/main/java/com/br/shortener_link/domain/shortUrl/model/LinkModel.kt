@@ -1,4 +1,4 @@
-package com.br.shortener_link.domain.model
+package com.br.shortener_link.domain.shortUrl.model
 
 data class LinkModel(
     val self: String,
