@@ -1,6 +1,6 @@
 package com.br.shortener_link.core
 
-import com.br.shortener_link.data.datasource.api.alias.AliasApi
+import com.br.shortener_link.data.datasource.api.AliasApi
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

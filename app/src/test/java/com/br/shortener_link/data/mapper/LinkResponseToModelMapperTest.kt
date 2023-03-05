@@ -1,6 +1,7 @@
-package com.br.shortener_link.data.mapper.alias
+package com.br.shortener_link.data.mapper
 
-import com.br.shortener_link.data.datasource.api.alias.response.Links
+import com.br.shortener_link.data.datasource.api.dto.response.Links
+import com.br.shortener_link.data.mapper.alias.mapToDomain
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
 

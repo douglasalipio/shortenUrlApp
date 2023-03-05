@@ -1,4 +1,4 @@
-package com.br.shortener_link.data.datasource.api.alias.response
+package com.br.shortener_link.data.datasource.api.dto.response
 
 import com.google.gson.annotations.SerializedName
 
