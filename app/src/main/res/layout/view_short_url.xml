@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/urlStringText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite URL"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/saveUrlStringButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveUrlStringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="@+id/urlStringText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/urlStringText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
