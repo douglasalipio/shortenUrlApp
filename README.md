@@ -8,6 +8,9 @@ I/okhttp.OkHttpClient: --> END POST (24-byte body)
 I/okhttp.OkHttpClient: <-- 404 Not Found https://url-shortener-nu.herokuapp.com/api/alias
 ```
 
+## Shorter-link app
+
+
 ## Project architecture
 
 The App was developed based on clean architecture concept. It is separated by package layers such as
@@ -18,7 +21,10 @@ Domain - layer responsible for handle business logic (UseCase)
 data - layer responsible for handle remote/local data
 
 ## Testing
-The app contains instrumentation and unit tests.
+<img src ="https://github.com/douglasalipio/shortenUrlApp/blob/main/Screen%20Shot%202023-03-08%20at%2011.14.34.png" />&nbsp;&nbsp;
+
+The app contains instrumentation and unit tests. 
+The code covered roughly 63% without measuring the UI testing
 
 data layer tests:
 
