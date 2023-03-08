@@ -9,6 +9,7 @@ I/okhttp.OkHttpClient: <-- 404 Not Found https://url-shortener-nu.herokuapp.com/
 ```
 
 ## Shorter-link app
+<img src ="https://github.com/douglasalipio/shortenUrlApp/blob/main/device-2023-03-08-112147.gif"  width="360"/>&nbsp;&nbsp;
 
 
 ## Project architecture

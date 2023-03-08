@@ -30,14 +30,7 @@ class ShortUrlFragment : Fragment(R.layout.fragment_short_url) {
         viewModel.viewState.action.observe(viewLifecycleOwner) { state ->
             when (state) {
                 is ShortUrlViewState.Action.ShowSuccess -> updateShortUrlList(state.shortUiModel)
-                is ShortUrlViewState.Action.ShowError -> {
-                    Toast.makeText(
-                        requireContext(),
-                        "Error 404",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    updateShortUrlList(ShortUiModel("alias", LinkUiModel("self", "short")))
-                }
+                is ShortUrlViewState.Action.ShowError -> showError()
             }
         }
     }
@@ -56,8 +49,14 @@ class ShortUrlFragment : Fragment(R.layout.fragment_short_url) {
         viewBinding.shortUrlView.setOnclickListener(saveUrlActionClick)
     }
 
-    private fun saveUrlStringClicked() {
-//        val urlString = viewBinding.urlStringText.toString()
-//        viewModel.dispatchViewAction(ShortUrlViewAction.SaveShortUrlClicked(urlString))
+    private fun showError() {
+        Toast.makeText(
+            requireContext(),
+            "Error 404",
+            Toast.LENGTH_LONG
+        ).show()
+        //TODO As the alias api is always returns 404.
+        // I've added manually the shortUrl object to the recycler list in order to show the feature usage.
+        updateShortUrlList(ShortUiModel("alias", LinkUiModel("self", "short")))
     }
 }
