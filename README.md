@@ -9,11 +9,15 @@ I/okhttp.OkHttpClient: <-- 404 Not Found https://url-shortener-nu.herokuapp.com/
 ```
 
 ## Shorter-link app
+
+As the alias api is always returns 404. I've added manually the shortUrl object to the recycler list in order to show the feature usage.
+
 <img src ="https://github.com/douglasalipio/shortenUrlApp/blob/main/device-2023-03-08-112147.gif"  width="360"/>&nbsp;&nbsp;
 
 
 ## Project architecture
 <img src ="https://github.com/douglasalipio/weathercheck_interview/blob/master/clean-architecture-interaction.png" />&nbsp;&nbsp;
+
 The App was developed based on clean architecture concept. It is separated by package layers such as
 domain, presentation, and data.
 
