@@ -12,7 +12,7 @@ I/okhttp.OkHttpClient: <-- 404 Not Found https://url-shortener-nu.herokuapp.com/
 
 
 ## Project architecture
-
+<img src ="https://github.com/douglasalipio/weathercheck_interview/blob/master/clean-architecture-interaction.png" />&nbsp;&nbsp;
 The App was developed based on clean architecture concept. It is separated by package layers such as
 domain, presentation, and data.
 
