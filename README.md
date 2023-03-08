@@ -21,9 +21,9 @@ As the alias api is always returns 404. I've added manually the shortUrl object 
 The App was developed based on clean architecture concept. It is separated by package layers such as
 domain, presentation, and data.
 
-Presentation - layer responsible for the view such as Activities, Fragments, ViewModel, and etc
-Domain - layer responsible for handle business logic (UseCase)
-data - layer responsible for handle remote/local data
+* Presentation - layer responsible for the view such as Activities, Fragments, ViewModel, and etc
+* Domain - layer responsible for handle business logic (UseCase)
+* data - layer responsible for handle remote/local data
 
 ## Testing
 <img src ="https://github.com/douglasalipio/shortenUrlApp/blob/main/Screen%20Shot%202023-03-08%20at%2011.14.34.png" />&nbsp;&nbsp;
